@@ -15,13 +15,13 @@ http = urllib3.PoolManager()
 urllib3.disable_warnings()
 
 # Open .csv file
-with open('C:/Users/HP/Desktop/Mosaic Case Study/05 Python/MosaicWebsitesList_In.csv', "r", encoding="utf8") as csvfile:
+with open('C:/Users/HP/Desktop/Mosaic Case Study/05 Python/WebsitesList_In.csv', "r", encoding="utf8") as csvfile:
 
     # Prepare csv files
-    in_file = open('C:/Users/HP/Desktop/Mosaic Case Study/05 Python/MosaicWebsitesList_In.csv', "r", encoding="utf8")
+    in_file = open('C:/Users/HP/Desktop/WebsitesList_In.csv', "r", encoding="utf8")
     readCSV = csv.reader(csvfile, delimiter=';')
     first_row = next(readCSV)
-    out_file = open('C:/Users/HP/Desktop/Mosaic Case Study/05 Python/MosaicWebsitesList_Out.csv', "a", encoding="utf8")
+    out_file = open('C:/Users/HP/Desktop/MosaicWebsitesList_Out.csv', "a", encoding="utf8")
 
     for line in readCSV:
 
